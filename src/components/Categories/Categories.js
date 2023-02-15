@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import CategoryItem from './CategoryItem';
-import { CategoryContainer} from '../styles';
+import { CategoryContainer} from './style';
 import { useState,useEffect } from 'react';
+import { AppContext } from '../../App';
 
 
 const Categories = () => {   
 
-    const [categories,setCategories]=useState([])
+    const {categories,setCategories}=useContext(AppContext)
 
     useEffect(()=>{fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
                         .then((res)=>res.json())

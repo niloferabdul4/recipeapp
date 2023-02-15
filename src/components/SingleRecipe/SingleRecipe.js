@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavLink, useNavigate, useParams } from 'react-router-dom';
 import { useState,useEffect } from 'react';
-import { RecipeInfoContainer,RecipeImageContainer,RecipeImage,RecipeInfo,RecipeTitle, Description,Button} from '../styles';
+import { RecipeInfoContainer,RecipeImageContainer,RecipeImage,RecipeInfo,RecipeTitle, Description,Button} from './style';
+
 
 
 const SingleRecipe = () => {
-
     const {id}=useParams()
     const navigate=useNavigate()
     const [singleRecipe,setSingleRecipe]=useState([])

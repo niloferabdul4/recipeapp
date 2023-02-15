@@ -1,7 +1,7 @@
 import React from 'react';
-import { AlphaBlocks, IndexContainer } from '../styles';
+import { AlphaBlocks, IndexContainer } from './style';
 import { useContext } from 'react';
-import { AppContext } from '../App';
+import { AppContext } from '../../App';
 
 const Index = () => {
 
